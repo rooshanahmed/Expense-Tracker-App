@@ -28,7 +28,7 @@ const AddTransaction = () => {
          <form onSubmit={onSubmit}>
             <div className="form-control">
                 <label htmlFor="text">Text</label>
-                <input type="text" value={text} onChange={(e) => setAmount(e.target.value)} placeholder="Enter The Text . . ." required/>
+                <input type="text" value={text} onChange={(e) => setText(e.target.value)} placeholder="Enter The Text . . ." required/>
             </div>
             <div className="form-control">
                 <label htmlFor="amount">Amount <br /> (negative - expense, positive + income)</label> <br />
