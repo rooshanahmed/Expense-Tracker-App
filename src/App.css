@@ -12,7 +12,7 @@ body {
   background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   min-height: 100vh;
   margin: 0;
@@ -154,4 +154,12 @@ input[type='number'] {
   .container {
     width: 300px;
   }
+}
+.footer{
+  background-color: darkslategrey;
+  text-align: center;
+  padding: 15px 0 20px 20px;
+  border: 2px solid black;
+  font-size: 20px;
+  color: whitesmoke
 }

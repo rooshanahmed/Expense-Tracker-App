@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import GlobalContext from '../context/GlobalState';
-
+import Button from '@material-ui/core/Button';
 
 const AddTransaction = () => {
     const [text , setText] = useState('');
@@ -34,7 +34,7 @@ const AddTransaction = () => {
                 <label htmlFor="amount">Amount <br /> (negative - expense, positive + income)</label> <br />
                 <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter The Amount . . ." required/>
             </div>
-            <button className="btn">Add Transaction</button>
+            <Button className="btn" variant="contained" color="primary" onClick={onSubmit}>Add Transaction</Button>
          </form>
         </>
     )
